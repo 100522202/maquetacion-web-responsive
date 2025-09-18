@@ -245,21 +245,148 @@ main {
   min-height: 500px;   /* pon lo que quieras */
 }
 
+.Filas {
+  display: flex;
+  flex-direction: column; /* 👈 apila las cajas */
+  gap: 20px;
+}
+
+.Experiencia {
+  display: flex;
+  flex-direction: row; /* 👈 apila las cajas */
+  gap: 20px;
+}
+.experiencia1 {
+  min-height: 175px;
+  min-width: 225px;
+}
+
+.caja .experiencia1 h3 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+
+.grid-experiencias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.exp-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.exp-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.exp-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.exp-contenido img {
+  width: 70%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.exp-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-exp {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: red;
+  transition: transform 0.2s;
+}
+
+.like-exp:hover {
+  transform: scale(1.2);
+}
+
+.boton-exp {
+  padding: 4px 8px;              /* 👈 más pequeño */
+  border: 1px solid #1e3a8a;
+  border-radius: 5px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;            /* 👈 letra más pequeña */
+  font-weight: bold;
+}
+
+.boton-exp:hover {
+  background-color: #0f2e66;
+}
+.Fotos {
+  width: 150px;  /* logo pequeñito */
+  height: 150px;
+}
+
+.acciones-exp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.boton-exp {
+  padding: 6px 12px;
+  border: 1px solid #1e3a8a;
+  border-radius: 6px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.boton-exp:hover {
+  background-color: #0f2e66;
+}
+
+.like-exp {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: red;
+  transition: transform 0.2s;
+}
+
+.like-exp:hover {
+  transform: scale(1.2);
+}
+
 /* Caja derecha (aside) */
 .aside-der {
   min-height: 400px;  
 }
 
 .acceso {
-  background: #fff;
+  background: #263852;
   border: 1px solid black;
   border-radius: 10px;
   padding: 12px;
+  color: white;
 }
 
 .acceso h2 {
   margin: 0 0 10px 0;
   font-size: 15px;
+  color:white;
 }
 
 .inicio_sesion {
@@ -281,7 +408,7 @@ main {
   margin: -auto aut;
 }
 
-/* Efecto al hacer foco (cuando clicas dentro del input) */
+/* Efecto al hacer foco (cuando ºººº clicas dentro del input) */
 .inicio_sesion input:focus {
   outline: none;  
   border-color: #1e3a8a;       /* azul igual que el header */
@@ -332,3 +459,78 @@ main {
   border-top: 1px solid rgb(196, 176, 176);
   margin: 10px;;
 }
+
+.panel {
+  background: #ffffff;            /* blanco de fondo */
+  border: 1px solid #e5e7eb;      /* gris clarito para el borde */
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: #111827;                 /* gris oscuro para texto */
+  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+
+/* Titulares consistentes */
+.panel h2 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #111827;                 /* mismo gris oscuro */
+  letter-spacing:.2px;
+}
+
+/* Listas limpias */
+.lista_panel { 
+  list-style:none; 
+  margin:0; 
+  padding:0; 
+}
+.lista_panel li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.lista_panel li:last-child { 
+  border-bottom: none; 
+}
+
+.lista_panel a {
+  color: #111827;
+  text-decoration: none;
+}
+.lista_panel a:hover { color: #2563eb; }
+
+/* Colores por sección */
+.panel.destinos h2::after { 
+  background: #2563eb; 
+}
+   /* azul */
+.panel.consejos h2::after { 
+  background: #16a34a; 
+}
+   /* verde */
+.panel.encuentros h2::after { 
+  background: #f97316; 
+} /* naranja */
+
+/* Títulos */
+.panel.destinos h2 {
+  color:#0f172a;
+}
+.panel.consejos h2 {
+  color:#0f172a; 
+}
+.panel.encuentros h2 { 
+  color:#0f172a; 
+}
+
+/* Ajuste de texto secundario (checkbox, etc.) */
+.inicio_sesion .recordar {
+  color: #6b7280; 
+}         /* gris medio */
+
+/* Botones */
+.boton {
+  border:1px solid #1e3a8a;       /* azul oscuro */
+  background: #1e3a8a;
+  color: #fff;
+}
+.boton:hover { background:#17306a; } /* azul más oscuro */
