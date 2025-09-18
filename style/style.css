@@ -199,8 +199,40 @@ main {
 }
 
 /* Caja arriba izquierda */
-.caja1 {
-  min-height: 200px;   /* pon lo que quieras */
+.banner {
+  position: relative;
+  background-image: url("../img/mountain.jpg"); /* tu imagen de portada */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); /* oscurece para mejor contraste del texto */
+}
+
+.banner-contenido {
+  position: relative; /* para que el texto esté por encima del overlay */
+  z-index: 1;
+}
+
+.banner-contenido h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-contenido p {
+  font-size: 1.2rem;
 }
 
 /* Caja arriba derecha */
@@ -237,7 +269,8 @@ main {
 }
 .inicio_sesion input[type="email"],
 .inicio_sesion input[type="password"] {
-  width: 95%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 8px 10px;
   border: 1px solid #cbd5e1;   /* gris clarito, no negro fuerte */
   border-radius: 6px;          /* redondeado sutil */
@@ -245,6 +278,7 @@ main {
   background: #f9fafb;
   color: #111;
   transition: border-color 0.2s, box-shadow 0.2s;
+  margin: -auto aut;
 }
 
 /* Efecto al hacer foco (cuando clicas dentro del input) */
@@ -265,18 +299,36 @@ main {
 
 .acciones{
   display: flex;
-  gap: 8px;
-  margin-top: 6px;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .boton{
-  padding: 8px 10px;
-  border-radius: 6px;
+  display: inline-block;     /* para que se comporte como botón */
+  text-align: center;        /* centra el texto */
+  flex: 1;
+  max-width: 200px;
+  padding: 12px 0;
+  border-radius: 10px;
   border: 1px solid #1e3a8a;
-  background: #1e3a8a;   /* azul del header */
+  background: #1e3a8a;
   color: #fff;
   font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;     /* quita el subrayado típico de los <a> */
   cursor: pointer;
-  transition: filter .15s;
+  transition: background .15s;
 }
 
+.boton:hover {
+  background: #0f2e66;       /* un azul más oscuro al pasar el ratón */
+}
+
+
+.barra_separadora {
+  border:none;
+  border-top: 1px solid rgb(196, 176, 176);
+  margin: 10px;;
+}
