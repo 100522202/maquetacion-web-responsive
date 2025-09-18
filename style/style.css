@@ -109,9 +109,53 @@ footer {
   color: black;
   font-weight: bold;
 }
+
+
+
 /* ---------- MAIN (para separar header y footer) ---------- */
+
+
 main {
-  min-height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
   padding: 20px;
-  background-color: #f9fafb; /* gris claro */
+  background: #f3f4f6; /* gris claro */
+}
+
+
+/* IZQUIERDA: grid de 2 columnas */
+.zona-izq {
+  display: flex;
+  flex-direction: column; /* 👈 apila las cajas */
+  gap: 20px;
+}
+
+/* Estilo base para TODAS las cajas */
+.caja {
+  background: rgb(242, 225, 225);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 10px;
+  color: yellow;
+}
+
+/* Caja arriba izquierda */
+.caja1 {
+  min-height: 200px;   /* pon lo que quieras */
+}
+
+/* Caja arriba derecha */
+.caja2 {
+  min-height: 300px;   /* pon lo que quieras */
+}
+
+/* Caja abajo (ocupa todo el ancho de la izquierda) */
+.caja3 { /* Creo que se puede quitar */
+  min-height: 500px;   /* pon lo que quieras */
+}
+
+/* Caja derecha (aside) */
+.aside-der {
+  min-height: 400px;  
 }
