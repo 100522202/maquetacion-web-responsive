@@ -3,36 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
   <header>
-    <nav> <a href="./pracctica1.html">Mochileros Sin Fronteras</a> <!--Si se hace click se recarga la página-->
+    <!-- Nombre a la izquierda -->
+    <a href="./practica1.html" class="nombre">Mochileros Sin Fronteras</a>
+
+    <!-- Menú en el centro -->
+    <nav class="menu_navegacion">
       <a href="#">Inicio</a>
       <a href="#">Experiencias</a>
       <a href="#">Consejos</a>
       <a href="#">Foro</a>
       <a href="#">Contacto</a>
     </nav>
-    <img src="./img/logo.png" alt="logo">
-    <select name="idiomas">
-      <option value="españa">Es</option> <!--Falta logo de españa-->
-      <option value="ingles">Eng</option>
-    </select>
-    
+
+    <!-- Logo + selector de idioma a la derecha -->
+    <div class="cambiar_idiomas">
+      <img src="./img/logo.png" alt="logo" class="logo">
+      <select name="idiomas">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
   </header>
   
   <main>
-
+    <section class="contenido">
+      <h2>Bienvenido a Mochileros Sin Fronteras</h2>
+      <p>Aquí irá el contenido principal de tu práctica.</p>
+    </section>
   </main>
 
   <footer>
-    <h1>&reg; 2025 Mochileros sin Fronteras</h1>
-    <nav><a href="#">Sobre nosotros.</a></nav>
+    <!--<h1>&reg; 2025 Mochileros sin Fronteras</h1>
+    <nav>
+      <a href="#">Sobre nosotros.</a>
       <a href="#">Política de Privacidad.</a>
       <a href="#">Ayuda</a>
-      <a href="#"><img src="./img/instagram_logo.png" alt="Instagram logo"></a>
-      <a href="#"><img src="./img/tiktok_logo.webp" alt="Tiktok logo"></a>
-      <a href="#"><img src="./img/Youtube_logo.png" alt="Youtube logo"></a>
+    </nav>
+    <a href="#"><img src="./img/instagram_logo.png" alt="Instagram logo"></a>
+    <a href="#"><img src="./img/tiktok_logo.webp" alt="Tiktok logo"></a>
+    <a href="#"><img src="./img/Youtube_logo.png" alt="Youtube logo"></a> -->
   </footer>
 </body>
 </html>
