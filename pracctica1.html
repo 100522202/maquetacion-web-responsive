@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -39,25 +39,60 @@
     </section>
 
     <!-- Columna derecha -->
-    <aside class="caja aside-der">Aside derecha</aside>
+    <aside class="aside-der">
+      <section class="acceso">
+        <h2>Accede a tu perfil</h2>
+
+        <form class="inicio_sesion" action="#" method="post" autocomplete="off">
+          <label for="email">Usuario</label>
+          <input id="email" name="email" type="email" placeholder="Usuario">
+
+          <label for="contraseña">Contraseña</label>
+          <input id="contraseña" name="contraseña" type="password" placeholder="Contraseña">
+
+          <label class="recordar" for="recordar">
+            <input type="checkbox" id="recordar" name="recordar">
+            Recordar credenciales
+          </label>
+
+          <div class="acciones">
+            <button type="button" class="boton ">Iniciar sesión</button>
+            <button type="button" class="boton registrar">Registro</button>
+          </div>
+        </form>
+
+      </section>
+
+    </aside>
+      
+
   </main>
 
 
 
 
   <footer>
-    <h1 class="footer">&reg; 2025 Mochileros sin Fronteras</h1>
+  <h1 class="footer">&reg; 2025 Mochileros sin Fronteras</h1>
+  
+  <div class="footer-links">
     <nav class="pie_pag_nav">
       <a href="#">Sobre nosotros</a>
       <a href="#">Política de Privacidad</a>
       <a href="#">Ayuda</a>
     </nav>
-    <div class="Redes_sociales">
-      <a href="#"><img src="./img/instagram_logo.png" alt="Instagram_logo" class="Instagram_logo"></a>
-      <a href="#"><img src="./img/tiktok_logo.webp" alt="Tiktok_logo" class="Tiktok_logo"></a>
-      <a href="#"><img src="./img/Youtube_logo.png" alt="Youtube_logo" class="Youtube_logo"></a>
-    </div> 
 
-  </footer>
+    <!-- Newsletter debajo de los enlaces -->
+    <div class="newsletter">
+      <input type="email" placeholder="tucorreo@electrónico.com">
+      <button>Suscribirse</button>
+    </div>
+  </div>
+  
+  <div class="Redes_sociales">
+    <a href="#"><img src="./img/instagram_logo.png" alt="Instagram_logo" class="Instagram_logo"></a>
+    <a href="#"><img src="./img/tiktok_logo.webp" alt="Tiktok_logo" class="Tiktok_logo"></a>
+    <a href="#"><img src="./img/Youtube_logo.png" alt="Youtube_logo" class="Youtube_logo"></a>
+  </div> 
+</footer>
 </body>
 </html>
