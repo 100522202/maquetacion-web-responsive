@@ -20,7 +20,7 @@ footer {
   grid-template-columns: 1fr auto 1fr; 
   align-items: center;
   padding: 10px 20px;
-  background-color: lightblue; /* azul */
+  background-color: lightsteelblue; /* azul */
   color: white;
   border: 1px solid black;
   border-radius: 5px;
@@ -115,7 +115,7 @@ footer {
   grid-template-columns: 1fr auto 1fr; /* 3 columnas: copyright - enlaces+newsletter - redes */
   align-items: center;
   padding: 15px 20px;
-  background-color: lightblue;
+  background-color: lightsteelblue;
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px;
@@ -191,7 +191,7 @@ main {
 
 /* Estilo base para TODAS las cajas */
 .caja {
-  background: rgb(242, 225, 225);
+  background: lightsteelblue;
   border: 1px solid #555;
   border-radius: 6px;
   padding: 10px;
