@@ -246,6 +246,7 @@ main {
 .inicio_sesion input[type="email"],
 .inicio_sesion input[type="password"] {
   width: 100%;
+  box-sizing: border-box;
   padding: 8px 10px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
