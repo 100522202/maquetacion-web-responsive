@@ -278,17 +278,17 @@ main {
 
 .exp-card .me-gusta {
   position: absolute;
+  font-size: 30px;
   top: 10px;
   right: 10px;
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
+  background: transparent;
   color: #e11d48;
   display: grid;
   place-items: center;
   text-decoration: none;
-  z-index: 2;
+  z-index: 1;
 }
 
 .exp-card .texto {
