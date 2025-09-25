@@ -100,17 +100,6 @@ main {
   overflow: hidden;
 }
 
-.banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.40);
-}
-
-.banner-contenido {
-  position: relative;
-  z-index: 1;
-}
 
 .banner-contenido h1 {
   font-size: 2rem;
