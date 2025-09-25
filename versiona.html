@@ -5,7 +5,7 @@
   <title>Registro</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
+<body class="versiona-registro">
   <header>
     <!-- Nombre a la izquierda -->
     <a href="./pracctica1.html" class="nombre">Mochileros Sin Fronteras</a>
@@ -40,18 +40,58 @@
         <section class="nuevosregistro">
             <h2>Registro de nuevos usuarios</h2>
 
-            <form class="registro" action="#" method="post" autocomplete="off">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text" placeholder="Nombre">
+            <form class="registro" action="./versionb.html" method="get">
+             
+              <div class="dos-campos">
+                <div class="campo">
+                  <input id="nombre" name="nombre" type="text" placeholder="Nombre">
+                </div>
 
-                <label for="apellidos">Apellidos</label>
-                <input id="apellidos" name="apellidos" type="text" placeholder="Apellidos">
+                <div class="campo">
+                  <input id="apellidos" name="apellidos" type="text" placeholder="Apellidos">
+                </div>
+              </div>
 
-                <label for="correo">Correo electrónico</label>
-                <input id="correo" name="correo" type="email" placeholder="Correo">
+              <div class="dos-campos">
+                <div class="campo">
+                  <input id="correo" name="correo" type="email" placeholder="Correo electrónico">
+                </div>
+                
+                <div class="campo">
+                  <input id="confirmar-correo-registro" name="confirmar-correo-registro" type="email" placeholder="Confirmar el correo">
+                </div>
+              </div>
 
-                <label for="confirmar-correo-registro">Confirma el correo</label>
-                <input id="confirmar-correo-registro" name="confirmar-correo-registro" type="email" placeholder="confirmar-correo-registro">
+              <div class="fecha">
+                <label class="fecha-nac-text" for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" placeholder="dd/mm/yyyy">
+              </div>
+              
+              <div class="dos-campos">
+                <div class="campo">
+                  <input id="login" name="login" type="text" placeholder="login">
+                </div>
+
+                <div class="campo">
+                  <input id="password" name="password" type="password" placeholder="password">
+                </div>
+              </div>
+
+              <div class="subir-imagen">
+                <label for="subir-perfil">Subir imagen de perfil</label>
+                <input id="subir-perfil" type="file">
+              </div>
+
+              <div class="politica-privacidad">
+                <label for="aceptar-politica">
+                  <input type="checkbox" id="aceptar-politica" name="aceptar-politica">
+                  <span>Aceptar la </span> <a href="#" class=" politica-privacidad-link">Política de privacidad</a>
+                </label>
+              </div>
+
+              <div class="guardar-acceder">
+                <input id="guardaryacceder" type="submit" value="Guardar datos y acceder">
+              </div>
             </form>
         </section>
         
