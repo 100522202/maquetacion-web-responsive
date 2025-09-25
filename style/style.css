@@ -1,4 +1,4 @@
-/* ========== RESET & BASE ========== */
+﻿/* ========== RESET & BASE ========== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -463,6 +463,148 @@ main {
 
 .lista_panel a:hover {
   color: #2563eb;
+}
+
+/* aside version B */
+.packSesion {
+  display: flex;
+  flex-direction: row;  
+  align-items: center; 
+  gap: 3rem;
+  justify-self: center;               
+}
+.accesoH2B {
+  text-align: center;
+}
+.ImagenUsuario {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.CerrarSesion {
+  align-self: flex-start;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  border-radius: 90rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.01s;
+}
+
+.lugares {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.lugares h2 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.texto_lugar {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.lugar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.experiencias1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; 
+  justify-items: center; 
+}
+
+.checkLugar {
+  display: flex;
+  flex-direction: row;  
+  align-items: center; 
+  justify-self: center;
+}
+
+.lugares input[type="text"] {
+  display: block;
+  margin: 10px auto 0;
+  padding: 8px 35px 8px 35px; /* espacio para la lupa */
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background: #ffffff url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 10px center;
+  background-size: 16px;
+  color: #111827;
+  width: 60%;
+  text-align: center;
+}
+
+.titulo input[type="text"] {
+  margin: 10px auto 0;
+  padding: 8px 35px 8px 35px; /* espacio para la lupa */
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background-size: 16px;
+  color: #111827;
+  width: 40%;
+}
+
+.agrupar input[type="text"] {
+  margin: 10px auto 0;
+  padding: 8px 35px 8px 35px; /* espacio para la lupa */
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background-size: 16px;
+  color: #111827;
+  width: 40%;
+}
+
+/* botón */
+.agrupar button {
+  padding: 8px 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+/* botón */
+.agrupar button {
+  padding: 8px 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.contenedor_imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.calendario {
+  border-radius: 0.8rem;
+  width: 50%;
+  height: 50%;
+  border: 2px solid #ccc; /* solo para que se vea el contorno */ 
+  box-shadow: 0 1px 0 rgba(20, 255, 4, 0.02);
 }
 
 /* ========== FOOTER ========== */
