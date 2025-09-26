@@ -777,7 +777,7 @@ body.versiona-registro main{
 body.versionc main {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 50px;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -794,25 +794,33 @@ body.versionc main {
   width: 100%;
   padding: 20px;
   border-radius: 0.75rem;
+  min-height: 9rem;
 }
 
 .versionc-C2{
   border: solid black;
-  height: 100%;
+  height: auto%;
   width: 100%;
-  padding: 20px;
+  padding: 1.2rem;
   border-radius: 0.75rem;
+  min-height: 9rem;
 }
 
-.version-der {
+.versionc-der {
+  display: flex;
+  padding: 1.2rem;
+  margin-right: 1rem;
   width: 100%;
-  box-sizing: border-box;
+  height: auto;
+  min-height: 9rem;
 }
 
 .versionc-C3{
   border: solid black;
-  height: 100%;
+  height: auto;
   width: 100%;
   padding: 20px;
   border-radius: 0.75rem;
+  min-height: 9rem;
+  margin-right: 1rem;
 }
