@@ -33,8 +33,7 @@
       </select>
     </div>
   </header>
-  
-
+      
 <main>
     <!-- Columna izquierda -->
     <section class="versionc-izq">
@@ -61,9 +60,47 @@
     </section>
 
     <section class="versionc-der">
-        <aside class="versionc-C3">
+        <section class="versionc-C3">
+          <h2>Formulario de compra</h2>
+          <form class="formulario-compra" action="#">
+            
+            <input class="campo-largo" id="nombre-compra" type="text" placeholder="Nombre completo">
 
-        </aside>
+            <input class="campo-largo" id="email-compra"  type="email" placeholder="Correo electrónico">          
+
+            <div>
+              <h3>Tipo de tarjeta</h3>
+              <div>
+                <select  class="elegir-tipo-tarjeta" name="tipo">
+                  <option value="mastercard">Mastercard</option>
+                  <option value="visa">Visa</option>
+                  <option value="amex">American</option>
+                </select>
+              </div>
+            </div>
+
+            
+            <input class="campo-largo" id="numero-tarjeta"  type="number" placeholder="Número de tarjeta">
+            
+            <input class="campo-largo" id="titular-tajeta"  type="text" placeholder="Nombre del titular de la tarjeta">
+           
+
+            <div class="caducidad-cvv">
+              <div class="caducidad-tarjeta">
+                <label for="fecha-caducidad">Fecha de caducidad</label>
+                <input id="fecha-caducidad"  type="month" placeholder="mm/yyyy">
+              </div>
+              <input id="cvv-tarjeta" type="number" placeholder="Código CVV">
+            </div>
+
+            <div class="comprar-borrar">
+              <input id="comprar" comprar"" type="submit" value="Comprar">
+              <input id="borrar-compra" type="submit" value="Borrar">
+            </div>
+
+          </form>
+
+        </section>
     </section>
 
 </main>
