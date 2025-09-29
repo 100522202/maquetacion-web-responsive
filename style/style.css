@@ -89,6 +89,7 @@ header {
     flex-wrap: wrap;
     gap: 0.75rem;
   }
+  
 }
 
 @media (max-width: 600px) {
@@ -108,34 +109,26 @@ header {
   .menu_navegacion {
     order: 2;
     width: 100%;
-    flex: 1 1 auto;
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
     gap: 0.5rem;
     scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
+    
   }
 
   .menu_navegacion a {
     padding: 0.25rem 0;
   }
 
-  .menu_navegacion::-webkit-scrollbar {
-    display: none;
-  }
+ 
 
   .cambiar_idiomas {
-    order: 3;
-    width: 100%;
+    width: 15%;
     justify-content: space-between;
     gap: 0.5rem;
     margin-left: 0;
-  }
-
-  .cambiar_idiomas select {
-    flex: 1 1 auto;
   }
 }
 /* ========== MAIN ========== */
@@ -920,8 +913,7 @@ body.versionc main {
   width: 100%;
 }
 
-.formulario-compra input,
-.formulario-compra select {
+.formulario-compra input {
   width: 100%;
   border-radius: 0.25rem;
 }
@@ -931,7 +923,7 @@ body.versionc main {
   font-size: 1rem;
 }
 
-.elegir-tipo-tarjeta {
+.elegir-tipo-tarjeta{
   width: 20%;
 }
 
@@ -1051,7 +1043,7 @@ body.versionc main {
     width: 100%;
   }
   .elegir-tipo-tarjeta {
-    width: 100%;
+    width: 20%;
   }
   .caducidad-cvv {
     flex-wrap: wrap;
