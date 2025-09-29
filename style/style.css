@@ -1046,8 +1046,10 @@ body.versionc main {
     width: 20%;
   }
   .caducidad-cvv {
-    flex-wrap: wrap;
     gap: 1.25rem;
+  }
+  .caducidad-cvv input {
+    width: 30%;
   }
 
 
@@ -1067,9 +1069,10 @@ body.versionc main {
     flex-direction: column;
     gap: 1rem;
   }
+
   .caducidad-cvv input,
   .caducidad-tarjeta input {
-    width: 100%;
+    width: 30%;
   }
   .comprar-borrar {
     flex-direction: column;
