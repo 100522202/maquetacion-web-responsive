@@ -563,6 +563,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  body footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* ========== VERSIÓN A ========== */
@@ -647,6 +651,75 @@ body.versiona-registro main{
   border-radius: 0.5rem;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.653);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  body.versiona-registro main {
+    flex-direction: column;
+  }
+  .menu_navegacion {
+    flex-direction: column;
+  }
+  .tabla-registros {
+    flex-direction: column;
+  }
+  .dos-campos {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .campo {
+    width: 100%;
+  }
+  .fecha {
+    width: 100%;
+  }
+  .subir-imagen {
+    width: 100%;
+  }
+  .politica-privacidad {
+    width: 100%;
+  }
+  .guardar-acceder {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  body.versiona-registro main {
+    flex-direction: column;
+  }
+  .menu_navegacion {
+    flex-direction: column;
+  }
+  .tabla-registros {
+    flex-direction: column;
+  }
+  .dos-campos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .campo {
+    width: 100%;
+  }
+  .fecha {
+    width: 100%;
+  }
+  .subir-imagen {
+    width: 100%;
+  }
+  .politica-privacidad {
+    width: 100%;
+  }
+  .guardar-acceder {
+    width: 100%;
+    justify-content: center;
+  }
+  body.versiona-registro footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* ========== VERSIÓN B ========== */
@@ -769,6 +842,15 @@ body.versiona-registro main{
   height: 50%;
   border: 2px solid #ccc; /* solo para que se vea el contorno */ 
   box-shadow: 0 1px 0 rgba(20, 255, 4, 0.02);
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+
+  body.versionc footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* ========== VERSIÓN C ========== */
@@ -946,6 +1028,10 @@ body.versionc main {
   .caducidad-cvv input {
     width: 30%;
   }
+  body.versionc footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 600px) {
   html { font-size: 12px; }
@@ -972,5 +1058,9 @@ body.versionc main {
   }
   .comprar-borrar input {
     width: 100%;
+  }
+  body.versionc footer {
+    display: flex;
+    flex-direction: column;
   }
 }
