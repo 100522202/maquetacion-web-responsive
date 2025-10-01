@@ -742,13 +742,14 @@ body.versiona-registro main{
   border-radius: 0.75rem;
 }
 .CerrarSesion {
-  align-self: flex-start;
+  align-self: cen;
   margin-top: 2rem;
   padding: 1rem 1rem;
   border-radius: 90rem;
   background: rgba(255, 255, 255, 0.2);
   color: #f8fafc;
   font-weight: 600;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: background 0.01s;
 }
@@ -800,7 +801,7 @@ body.versiona-registro main{
   border-radius: 1.25rem;
   background-size: 1rem;
   color: #111827;
-  width: 40%;
+  width: 65%;
 }
 .agrupar input[type="text"] {
   margin: 0.625rem auto 0;
@@ -809,14 +810,7 @@ body.versiona-registro main{
   border-radius: 1.25rem;
   background-size: 1rem;
   color: #111827;
-  width: 40%;
-}
-.agrupar button {
-  padding: 0.5rem 0.9375rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-  background: #f9fafb;
-  cursor: pointer;
+  width: 65%;
 }
 .agrupar button {
   padding: 0.5rem 0.9375rem;
@@ -843,11 +837,61 @@ body.versiona-registro main{
   border: 2px solid #ccc; /* solo para que se vea el contorno */ 
   box-shadow: 0 1px 0 rgba(20, 255, 4, 0.02);
 }
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  .experiencias1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo input[type="text"] {
+    width: 100%;  
+    box-sizing: border-box;
+  }
+  .agrupar input[type="text"] {
+    width: 100%;  
+    box-sizing: border-box; 
+  }
+  .agrupar button {
+    width: 100%;  
+    box-sizing: border-box; 
+  }
+  .agrupar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 600px) {
   html { font-size: 12px; }
-
-  body.versionc footer {
+  .experiencias1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo input[type="text"] {
+    width: 100%;  
+    box-sizing: border-box;
+  }
+  .agrupar input[type="text"] {
+    width: 100%;  
+    box-sizing: border-box; 
+  }
+  .agrupar button {
+    width: 100%;  
+    box-sizing: border-box; 
+  }
+  .agrupar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  footer {
     display: flex;
     flex-direction: column;
   }
