@@ -160,8 +160,8 @@ header {
    ===================================================== */
 
 main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 1.25rem;
   padding: 1.25rem;
 }
@@ -172,6 +172,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex:2;
 }
 
 /* Main: responsive (columna en pantallas pequeñas) */
@@ -451,6 +452,7 @@ main {
   min-height: 25rem;
   width: 100%;
   box-sizing: border-box;
+  flex:1;
 }
 
 .acceso {

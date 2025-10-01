@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,11 +8,11 @@
 <body>
   <header>
     <!-- Nombre a la izquierda -->
-    <a href="./index.html" class="nombre">Mochileros Sin Fronteras</a>
+    <a href="./index.html" class="nombre" role="heading" aria-level="1">Mochileros Sin Fronteras</a>
 
     <!-- Menú en el centro -->
     <nav class="menu_navegacion">
-      <a href="#">Inicio</a>
+      <a href="#" aria-current="page">Inicio</a>
       <a href="#">Experiencias</a>
       <a href="#">Consejos</a>
       <a href="#">Foro</a>
@@ -21,7 +21,7 @@
 
     <!-- Logo + selector de idioma a la derecha -->
     <div class="cambiar_idiomas">
-      <img src="./img/logo.png" alt="logo" class="logo">
+      <img src="./img/logo.png" alt="Logo de Mochileros Sin Fronteras" class="logo">
       <select name="idiomas">
         <option value="es">ES</option>
         <option value="en">EN</option>
@@ -50,7 +50,7 @@
         <div class="carrusel-contenedor">
 
           <!-- Flecha izquierda -->
-          <button class="carrusel-flecha izq">‹</button>
+          <button class="carrusel-flecha izq"><</button>
 
           <div class="carrusel-items">
 
@@ -59,7 +59,7 @@
               <div class="pack-info">
                 <div class="pack-top">
                   <div class="pack-titulo">Aventura en Himalaya</div>
-                  <div class="pack-precio">750 €</div>
+                  <div class="pack-precio">750 ?</div>
                 </div>
                 <p class="pack-descripcion">Himalaya: equipamiento, refugios y guías</p>
                 <a href="./versionc.html" class="pack-boton">Comprar</a>
@@ -69,7 +69,7 @@
           </div>
 
           <!-- Flecha derecha -->
-          <button class="carrusel-flecha der">›</button>
+          <button class="carrusel-flecha der">></button>
         </div>
       </section>
 
@@ -78,8 +78,8 @@
         <div class="grid-experiencias">
 
           <!-- Safari en Serengeti -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/serengeti.webp" alt="Serengeti">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -87,11 +87,11 @@
               <p class="subtitulo">La Gran Migración y noches en campamentos.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
           <!-- Trekking en Himalaya -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/himalaya.webp" alt="Himalaya">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -99,11 +99,11 @@
               <p class="subtitulo">Refugios, rutas y vistas únicas.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
           <!-- Amazonas en canoa -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/amazonas.jpg" alt="Amazonas">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -111,11 +111,11 @@
               <p class="subtitulo">Aventura fluvial y eco-lodges.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
           <!-- Sahara en camello -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/sahara.jpg" alt="Sahara">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -123,11 +123,11 @@
               <p class="subtitulo">Caravanas y noches en el desierto.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
           <!-- Glamping en Atacama -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/Atacama.jpg" alt="Atacama">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -135,11 +135,11 @@
               <p class="subtitulo">Lujo bajo el cielo estrellado.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
           <!-- Cráter Monte Bromo -->
-          <div class="exp-card">
-            <a href="./versiona.html" class="me-gusta" aria-label="Me gusta">❤</a>
+          <article class="exp-card">
+            <a href="./versiona.html" class="me-gusta">?</a>
             <img class="foto" src="./img/Bromo.webp" alt="Monte Bromo">
             <div class="filtro-oscuro"></div>
             <div class="texto">
@@ -147,7 +147,7 @@
               <p class="subtitulo">Amanecer volcánico inolvidable.</p>
               <a href="./versiona.html" class="boton-exp">Ver más</a>
             </div>
-          </div>
+          </article>
 
         </div>
       </section>
@@ -155,8 +155,8 @@
 
     <!-- Columna derecha -->
     <aside class="aside-der">
-      <section class="acceso">
-        <h2>Accede a tu perfil</h2>
+      <section class="acceso" aria-labelledby="acceso-titulo">
+        <h2 id="acceso-titulo">Accede a tu perfil</h2>
 
         <form class="inicio_sesion" action="#" method="post" autocomplete="off">
           <label for="email">Usuario</label>
@@ -209,7 +209,7 @@
 </main>
 
 <footer>
-  <h1 class="footer">&reg; 2025 Mochileros sin Fronteras</h1>
+  <h1 class="footer" aria-hidden="true">&reg; 2025 Mochileros sin Fronteras</h1>
   
   <div class="footer-links">
     <nav class="pie_pag_nav">
@@ -226,9 +226,9 @@
   </div>
   
   <div class="Redes_sociales">
-    <a href="#"><img src="./img/instagram_logo.png" alt="Instagram_logo"></a>
-    <a href="#"><img src="./img/tiktok_logo.webp" alt="Tiktok_logo"></a>
-    <a href="#"><img src="./img/Youtube_logo.png" alt="Youtube_logo"></a>
+    <a href="#"><img src="./img/instagram_logo.png" alt="Instagram"></a>
+    <a href="#"><img src="./img/tiktok_logo.webp" alt="TikTok"></a>
+    <a href="#"><img src="./img/Youtube_logo.png" alt="YouTube"></a>
   </div> 
 </footer>
 </body>
