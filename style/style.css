@@ -859,7 +859,8 @@ body.versionc main {
   display: flex;
   gap: 1.25rem;
   padding: 1.25rem;
-  align-items: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
 }
 .versionc-izq,
 .versionc-der {
@@ -894,28 +895,37 @@ body.versionc main {
   min-height: 9rem;
   padding: 1.25rem;
 }
-.versionc-C3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.versionc-C3{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;   
+  align-items:stretch;         
+  min-height: 100%;
 }
-.formulario-compra {
-  display: flex;
-  flex-direction: column;
+
+.formulario-compra{
+  display:flex;
+  flex-direction:column;
   gap: 1.2rem;
-  width: 100%;
+  width:100%;
+  flex:1;            
+  min-height:0; 
+      
 }
+
 .formulario-compra input {
   width: 100%;
   border-radius: 0.25rem;
+  margin-top: auto; 
 }
 .campo-largo {
-  height: 2rem;
+  height: 3rem;
   font-size: 1rem;
+  margin-top: auto; 
 }
 .elegir-tipo-tarjeta{
   width: 20%;
+  height: 3rem;
 }
 .caducidad-cvv {
   display: flex;
@@ -923,6 +933,7 @@ body.versionc main {
   justify-content: flex-start;
   gap: 2.5rem;
   width: 35%;
+  margin-top: auto;
 }
 .caducidad-cvv input {
   border-radius: 0.2rem;
@@ -941,6 +952,7 @@ body.versionc main {
   flex-direction: row;
   gap: 5rem;
   justify-content: center;
+  margin-top: auto;
 }
 .comprar-borrar input {
   font-size: 1.5rem;

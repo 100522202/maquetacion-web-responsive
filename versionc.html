@@ -80,7 +80,7 @@
             </div>
 
             
-            <input class="campo-largo" id="numero-tarjeta"  type="number" placeholder="Número de tarjeta">
+            <input class="campo-largo" id="numero-tarjeta"  inputmode="numeric" pattern="[0-9]*" placeholder="Número de tarjeta">
             
             <input class="campo-largo" id="titular-tajeta"  type="text" placeholder="Nombre del titular de la tarjeta">
            
@@ -90,11 +90,11 @@
                 <label for="fecha-caducidad">Fecha de caducidad</label>
                 <input id="fecha-caducidad"  type="month" placeholder="mm/yyyy">
               </div>
-              <input id="cvv-tarjeta" type="number" placeholder="Código CVV">
+              <input id="cvv-tarjeta" inputmode="numeric" pattern="[0-9]*" placeholder="Código CVV">
             </div>
 
             <div class="comprar-borrar">
-              <input id="comprar" comprar"" type="submit" value="Comprar">
+              <input id="comprar" type="submit" value="Comprar">
               <input id="borrar-compra" type="submit" value="Borrar">
             </div>
 
