@@ -4,7 +4,7 @@ Prácticas de la asignatura **Diseño de Interfaces de Usuario / Interacción Pe
 
 ---
 
-## 📌 Descripción
+## Descripción
 
 Desarrollo de interfaces web modernas, accesibles y totalmente responsivas orientadas a la mejor experiencia de usuario (UX/UI).
 
@@ -16,7 +16,7 @@ Desarrollo de interfaces web modernas, accesibles y totalmente responsivas orien
 
 ---
 
-## 🌐 Tecnologías
+## Tecnologías
 
 * HTML5 Semántico
 * CSS3 (Flexbox, Grid, Media Queries)
